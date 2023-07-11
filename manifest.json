@@ -1,0 +1,22 @@
+{
+  "short_name":"PWA_Talk",  
+  "name":"PWA_Talk",
+  "background_color":"#42C7F4",
+  "icons": [
+    {
+      "src": "img/192size.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "img/512size.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "start_url":"./",
+  "display":"standalone",
+  "theme_color":"#42C7F4",
+  "orientation":"portrait",
+  "description":"pwa App - Talk 클론페이지를 만들어 봤습니다"
+}

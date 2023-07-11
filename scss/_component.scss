@@ -1,0 +1,54 @@
+.preview {
+    display: flex;
+    padding: 16px;
+    position: relative;
+
+    &:hover {
+        transform: scale(1.001);
+    }
+    .preview_col {          
+        
+        &:nth-child(1){
+            margin-left: 16px;
+        }
+        .preview_pic {
+            @include set-box(50px,50px,8px);
+            background:$main-color;
+            overflow: hidden;
+            object-fit: cover;
+            .preview_pic > img {
+                width: 100%;
+            }
+        }
+        .preview_title {
+            margin: 5px 0 10px 5px;
+            font-size: 0.7rem;
+            width: 50vh;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            color:$main-color;
+
+        }
+        .preview_msg {
+            margin-left: 5px;
+            width: 50vh;
+            font-size: 0.82rem;
+            color:$main-color;                
+            word-wrap: break-word;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            display: -webkit-box;
+            -webkit-line-clamp: 2; 
+            -webkit-box-orient: vertical;
+        }        
+
+        .preview_time {
+            position: absolute;
+            right: 16px;
+            top: 16px;
+            font-size: 0.73rem;
+            color:$gray2;
+        }
+    }
+}
